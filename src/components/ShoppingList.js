@@ -3,7 +3,7 @@ import ItemForm from "./ItemForm";
 import Filter from "./Filter";
 import Item from "./Item";
 
-function ShoppingList({ items,addNewItem }) {
+function ShoppingList({ items}) {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const[searchText, setSearchText] = useState('')
   
@@ -16,7 +16,10 @@ function ShoppingList({ items,addNewItem }) {
   function handleSearchText(e){
     setSearchText(e.target.value)
   }
+  
+  function addNewItem(){
 
+  }
   
 
   const itemsToDisplay = items
